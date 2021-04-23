@@ -11,11 +11,10 @@ img {
 }
 
 .search-form {
-  width: 180px;
+  width: 200px;
   margin: 30px auto;
   border-radius: 5px;
   border-style: hidden;
-
   border-color: transparent;
   border: 10px solid rgb(196, 188, 146);
 }
