@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>img finder</title>
+  </head>
+
+  <body>
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="query"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+    </form>
+    <ul class="gallery is-hidden">
+      <!-- Список <li> с карточками изображений -->
+    </ul>
+    <div id="pulse-loader" class="loader is-hidden">
+      <div class="pulse-loader-1"></div>
+      <div class="pulse-loader-2"></div>
+    </div>
+    <div class="to-top is-hidden">
+      <a href="#search-form">
+        <img src="./images/top-png.png" width="50" alt="" />
+      </a>
+    </div>
+  </body>
+</html>
