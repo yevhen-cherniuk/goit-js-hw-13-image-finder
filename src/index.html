@@ -11,25 +11,42 @@
   </head>
 
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-    </form>
-    <ul class="gallery is-hidden">
-      <!-- Список <li> с карточками изображений -->
-    </ul>
-    <div id="pulse-loader" class="loader is-hidden">
-      <div class="pulse-loader-1"></div>
-      <div class="pulse-loader-2"></div>
-    </div>
-    <div class="to-top is-hidden">
-      <a href="#search-form">
-        <img src="./images/top-png.png" width="50" alt="" />
-      </a>
+    <div class="container">
+      <form class="search-form js-search-form">
+        <div class="input-container">
+          <input
+            type="text"
+            class="form-control"
+            name="query"
+            id="searchQuery"
+            placeholder="Search images..."
+            autocomplete="off"
+          />
+
+          <button type="submit" class="btn">Search</button>
+        </div>
+      </form>
+
+      <ul class="gallery js-gallery-container"></ul>
+
+      <button
+        type="button"
+        class="btn loader is-hidden"
+        data-action="load-more"
+      >
+        <span class="is-hidden" role="status" aria-hidden="true"></span>
+
+        <span class="label">Show more</span>
+        <!-- <div id="pulse-loader" class="loader is-hidden">
+          <div class="pulse-loader-1"></div>
+          <div class="pulse-loader-2"></div>
+        </div>
+        <div class="to-top is-hidden">
+          <a href="#search-form">
+            <img src="./images/top-png.png" width="50" alt="" />
+          </a>
+        </div> -->
+      </button>
     </div>
   </body>
 </html>
